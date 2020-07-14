@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height= device-height, initial-scale=1.0">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon.ico' %}">
+    <link rel="manifest" href="{% static 'images/site.webmanifest' %}">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+    <title>Login</title>
+</head>
+<body>
+    <div class= "full-page">
+        <div class = "card">
+            <div id="front_slider">
+                <h6 id="logo">Skill Index</h6>
+                <h1 id="welcomeText">Welcome Back</h1>
+                <p id="infoText">Enter the details to login as an admin or click below to login as a user</p>
+                <button id="switchBtn" class="btnBasic">Test User</button>
+            </div>
+            <div id="bottom_slider">
+                <h1 id="bottom_slider_title">Admin Login</h1>
+                <input id="username_input" class="inputBasic" type="text" placeholder="Username">
+                <input id="password_input" class="inputBasic" type="password" placeholder="Password">
+                <button id="loginBtn" class="btnBasic">Sign In</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/login.js' %}"></script>
+</body>
+</html>
